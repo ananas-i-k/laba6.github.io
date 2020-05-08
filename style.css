@@ -1,0 +1,137 @@
+body { 
+	margin: 0;	
+	font-family: 'Montserrat', sans-serif;
+    font-size: 24px; 
+    line-height: 1.6; 
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.intro {
+	width: 100%;
+	height: 100vh;
+	background:url("images/goodmorning.jpg") center no-repeat;
+	background-size: cover;
+
+}
+.intro:before{
+  content: '';
+  position: absolute; top: 0; left: 0;
+  width: 100%;
+  height: 65px;
+  background: rgba(0,0,0,0.5);
+}
+
+
+
+
+.intro__title{
+	color: #fff;
+	padding-top: 120px;
+	font-size: 80px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.intro__abouttime{
+	color: #fff;
+	font-size: 50px;
+	font-weight: bold;
+}
+.intro__aboutday{
+	color: #fff;
+	font-size: 50px;
+	font-weight: bold;
+}
+.intro__aboutholiday{
+	color: #fff;
+	font-size: 50px;
+	font-weight: bold;
+}
+.header{
+	width: 100%;
+	position: absolute; 
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+
+}
+
+.header__logo{
+	font-size: 30px;
+	font-weight: 700;
+	color: #fff;
+}
+.nav{
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.nav__link{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 10px; 
+	color: #fff;
+	text-decoration: none;
+	transition-color:.2s linear;
+	position: relative;
+
+}
+
+.nav__link:hover{
+	color: #fc9;
+}
+.nav__link:hover:after{
+	display: block;
+}
+.nav__link:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	display: none;
+	background-color: #fc9;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1;
+}
+
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 10px;
+}
+
+
+
+
+.section{
+	padding: 50px 10px;
+
+}
+
+
+.section__header{
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto 40px;
+	text-align: center;
+	font-family: 'Kalam', cursive;
+	font-size: 40px;
+}
